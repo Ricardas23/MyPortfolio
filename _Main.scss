@@ -1,0 +1,91 @@
+@use 'Colors';
+
+// main{
+//     padding-left: 300px;
+//     padding-right: 300px;
+// }
+
+.introduction{
+    // padding-left: 300px;
+    // padding-right: 300px;
+    // height: 100vh;
+    padding-top: 200px;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    height: 70vh;
+}
+
+
+
+span{
+    font-size: 40px;
+    line-height: 55px;
+    font-family: 'Handjet', cursive;
+    font-weight: 400;
+
+    animation: typing;
+    animation-duration: 10s;
+    animation-timing-function: steps(50);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.name{
+    font-size: 50px;
+    line-height: 100px;
+    font-family: 'Handjet', cursive;
+    font-weight: 600;
+}
+
+.me-info{
+    font-size: 35px;
+    font-family: 'Handjet', cursive;
+    font-weight: 600;
+}
+
+
+.aboutme-container{
+    background-color: var(--aboutme-color);
+    height: 100vh;
+    // overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme{
+    display: flex;
+    width: 50%;
+    height: 800px;
+    padding-top: 100px;
+    gap: 100px;
+}
+
+.foto{
+    width: 500px;
+    height: 600px;
+}
+
+.info-aboutme-text{
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.aboutme-text{
+    font-size: 40px;
+    font-family: 'Handjet', cursive;
+    font-weight: 600;
+}
+
+.frontend-text{
+    font-size: 30px;
+    font-family: 'Handjet', cursive;
+    font-weight: 400;
+}
+

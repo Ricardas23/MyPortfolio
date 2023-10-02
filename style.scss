@@ -1,0 +1,14 @@
+@use 'header';
+@use 'Main';
+@use 'MySkills';
+@use 'Projects';
+@use 'Footer';
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
