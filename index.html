@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Work+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
           
 </head>
 <body>
@@ -19,7 +24,7 @@
 
         <img  class="logo" src="./img/code.png" alt="">
 
-    <nav >
+    <nav class="navlist">
         <ul class="header-info">
             <li>
                 <a href="#home">.Home()</a>
@@ -38,17 +43,22 @@
             </li>
         </ul>
     </nav>
+    <div id="menu-icon" class="bx bx-menu"></div>
 
     </header>
 
     <main>
         <section id="home" class="introduction">
-            <span> < Hello my name is /></span>
-            <h1 class="name">Ričardas Ivanovas</h1>
-            <h2 class="me-info">And i am frontend developer</h2>
+            <div class="text-center">
+                <span> < Hello my name is /></span>
+                <h1 class="name">Ričardas Ivanovas</h1>
+                <h2 class="me-info">And i am frontend developer</h2>
+            </div>
+            
         </section>
 
         <section id="about-me" class="aboutme-container">
+        <div class="about-me-wrapper">
             <div class="aboutme">
                 <img class="foto" src="./img/unnamed.jpg" alt="">
                 <div>
@@ -58,6 +68,7 @@
                     <p class="info-aboutme-text">As a recent graduate with a passion for front-end development, I am eager to applymy skills and knowledge to create visually appealing and user-friendly websites.With a good foundation in HTML, CSS, JavaScript, and responsive design, I amcommitted to contributing to innovative projects and delivering exceptional userexperiences. My goal is to continuously grow as a front-end developer whilecollaborating with a dynamic team to bring digital visions to life.</p>
                 </div>
             </div>
+        </div>
 
         </section>
 

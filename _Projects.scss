@@ -1,8 +1,9 @@
 .projects-container{
-    height: 90vh;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 100px;
+    // min-height: 45vh;
+    // padding-left: 15%;
+    // padding-right: 15%;
+    // padding-top: 100px;
+    padding: 100px 15% 100px 15%;
     background-color: var(--aboutme-color);
 }
 .project-img{
@@ -19,7 +20,7 @@
 }
 
 .row {
-    width: 30%;
+    width: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -86,4 +87,20 @@
   
   .D-Flex {
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  @media  (max-width: 992px) {
+      .projects-container{
+        height: auto;
+      }
+}
+
+@media  (max-width: 992px) {
+    .D-Flex{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+}

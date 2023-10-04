@@ -1,5 +1,5 @@
 @use 'Colors';
-
+@use 'Responsive';
 // main{
 //     padding-left: 300px;
 //     padding-right: 300px;
@@ -9,11 +9,16 @@
     // padding-left: 300px;
     // padding-right: 300px;
     // height: 100vh;
-    padding-top: 200px;
-    width: 100%;
+    // padding-top: 90px;
+    padding: 290px;
+    // width: 100%;
     align-self: center;
     text-align: center;
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    // height: 80vh;
 }
 
 
@@ -30,10 +35,10 @@ span{
     animation-fill-mode: forwards;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+// @keyframes typing {
+//     from { width: 0 }
+//     to { width: 100% }
+//   }
 
 .name{
     font-size: 50px;
@@ -51,15 +56,16 @@ span{
 
 .aboutme-container{
     background-color: var(--aboutme-color);
-    height: 100vh;
+    min-height: 100vh;
     // overflow: auto;
     display: flex;
     justify-content: center;
+    @include desktop{min-height: 40vh;}
 }
 
 .aboutme{
     display: flex;
-    width: 50%;
+    // width: 50%;
     height: 800px;
     padding-top: 100px;
     gap: 100px;
@@ -89,3 +95,19 @@ span{
     font-weight: 400;
 }
 
+.about-me-wrapper{
+    padding: 0px 50px;
+
+}
+
+// @media  (max-width: 992px) {
+//     .introduction{
+//         // height: 40vh;
+//     }
+// }
+
+// @media  (max-width: 992px) {
+//     .aboutme-container{
+//         min-height: 40vh;
+//     }
+// }

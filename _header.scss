@@ -1,4 +1,10 @@
 @use 'Colors';
+@use 'Responsive';
+// @mixin desktop {
+//     @media screen and (max-width: 992px) {
+//          @content;
+// }
+// }
 
 .header-container {
     display: flex;
@@ -7,16 +13,20 @@
     background-color: var(--headerBackground-Color);
     position: sticky;
     top: 0;
+    border-bottom: 1px solid white;
+    z-index: 100;
 }
     
 .header-info {
     display: flex;
-    
+    @include desktop{flex-direction: column;}
 }
 
 .header-info li{
     margin-right: 70px;
     list-style-type: none;
+    @include desktop{padding: 5px;
+        border-bottom: 1px solid white;}
 }
 
 .header-info li a{
@@ -49,4 +59,57 @@ li a:hover::after{
     opacity: 2;
     width: 50px;
     height: 50px;
+}
+
+.bx {
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 101;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+    @include desktop{display: block; color: white;}
+  }
+
+#menu-icon:hover{
+    transform: scale(1.3);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.navlist{
+    display: flex;
+    @include desktop{}
+}
+
+.navlist.open{
+    @include desktop{top: 100%;
+    width: 200px;
+}
+}
+
+.navlist{
+    @include desktop{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all 0.45s ease;
+        background-color: black;
+        padding: 15px;
+    }
 }
