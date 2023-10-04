@@ -75,18 +75,6 @@
 .github-linkedin-wrapper{
     @include phone{ display: flex;}
     display: flex;
+    gap: 30px;
 }
 
-
-
-
-// .footer-container {
-//     display: flex;
-//     flex-wrap: wrap;
-//     }
-//     .contacts-info {
-//     gap: 157px;
-//     gap: 200px;
-//     gap: 80px;
-//     flex-direction: column;
-//     }

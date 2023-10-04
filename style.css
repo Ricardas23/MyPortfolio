@@ -513,6 +513,7 @@ span {
 
 .github-linkedin-wrapper {
   display: flex;
+  gap: 30px;
 }
 @media screen and (max-width: 576px) {
   .github-linkedin-wrapper {
