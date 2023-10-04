@@ -1,11 +1,19 @@
 @use 'Colors';
 
+
+@mixin phone {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
 .myskills-container{
     // height: 100vh;
     // width: 100%;
     // background-color: var(--myskills-color);
     padding: 120px;
     background:linear-gradient(0deg, rgba(70,70,70,1) 0%, rgba(80,80,80,1) 100%);
+    @include phone{padding: 50px;}
 }
 
 .wrapper{

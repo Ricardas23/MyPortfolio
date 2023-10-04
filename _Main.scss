@@ -12,6 +12,12 @@
     }
 }
 
+@mixin phone {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
 
 // main{
 //     padding-left: 300px;
@@ -34,6 +40,7 @@
     align-items: center;
     // height: 80vh;
     @include laptop{padding-left: 200px; padding-right: 200px;}
+    @include phone{padding: 100px;}
 }
 
 
